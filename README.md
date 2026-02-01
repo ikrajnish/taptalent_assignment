@@ -1,6 +1,6 @@
 # 🌦️ Weather Analytics Dashboard
 
-## 1️⃣ Project Overview
+## 1️ Project Overview
 The **Weather Analytics Dashboard** is a responsive, feature-rich frontend application designed to allow users to track real-time weather conditions across the globe. Built with a focus on data visualization and user experience, the dashboard provides accurate current weather, comprehensive forecasts, and analytical insights into temperature trends and precipitation probabilities.
 
 **Problem Statement:** Users need a centralized, intuitive interface to monitor weather for multiple locations, analyze trends via charts, and customize their viewing preferences (units, favorites).
@@ -13,7 +13,7 @@ The **Weather Analytics Dashboard** is a responsive, feature-rich frontend appli
 
 ---
 
-## 2️⃣ Features
+## 2️ Features
 
 ### 🖥️ Dashboard (Home Screen)
 - **Multi-City Summary**: View quick-glance cards for multiple cities simultaneously.
@@ -42,7 +42,7 @@ The **Weather Analytics Dashboard** is a responsive, feature-rich frontend appli
 
 ---
 
-## 3️⃣ Tech Stack
+## 3️ Tech Stack
 
 - **Framework**: [React](https://react.dev/) (Functional Components + Hooks)
 - **Build Tool**: [Vite](https://vitejs.dev/)
@@ -55,7 +55,7 @@ The **Weather Analytics Dashboard** is a responsive, feature-rich frontend appli
 
 ---
 
-## 4️⃣ Application Architecture
+## 4️ Application Architecture
 
 The application follows a scalable, modular architecture:
 
@@ -78,7 +78,7 @@ The store is composed of three primary slices:
 
 ---
 
-## 5️⃣ Data Visualization
+## 5️ Data Visualization
 
 We utilize **Recharts** for performant, responsive rendering:
 
@@ -92,7 +92,7 @@ We utilize **Recharts** for performant, responsive rendering:
 
 ---
 
-## 6️⃣ API Integration
+## 6️ API Integration
 
 **Provider**: [WeatherAPI.com](https://www.weatherapi.com/)
 
@@ -107,7 +107,7 @@ We utilize **Recharts** for performant, responsive rendering:
 
 ---
 
-## 7️⃣ Setup & Installation
+## 7️ Setup & Installation
 
 ### Prerequisites
 - Node.js (v18+)
@@ -136,7 +136,7 @@ We utilize **Recharts** for performant, responsive rendering:
 
 ---
 
-## 8️⃣ Folder Structure
+## 8️ Folder Structure
 
 ```
 src/
@@ -158,21 +158,9 @@ src/
 
 ---
 
-## 9️⃣ Screenshots
 
-**(Placeholder for Project Screenshots)**
 
-| Dashboard | City Details |
-| :---: | :---: |
-| *[Add Dashboard Screenshot]* | *[Add Details Screenshot]* |
-
-| Mobile View | Search |
-| :---: | :---: |
-| *[Add Mobile Screenshot]* | *[Add Search Screenshot]* |
-
----
-
-## 🔟 Assignment Requirement Mapping
+## 9 Assignment Requirement Mapping
 
 | Requirement | Implementation Details | Location |
 | :--- | :--- | :--- |
@@ -188,23 +176,20 @@ src/
 
 ---
 
-## 1️⃣1️⃣ Challenges & Solutions
+## 10 Challenges & Solutions
 
-**1. API Response Structure Differences**
-*Challenge*: Switching from OpenWeatherMap to WeatherAPI meant different data shapes.
-*Solution*: Implemented a **Adapter Pattern** in `weatherApi.ts` to map incoming WeatherAPI responses to our standardized internal schema, preventing UI breakage.
 
-**2. Glassmorphism on Dark Backgrounds**
+**1. Glassmorphism on Dark Backgrounds**
 *Challenge*: Ensuring legibility while maintaining the frosted glass effect.
 *Solution*: Used specific Tailwind utility combinations (`backdrop-blur`, `bg-white/10`) and strictly enforced high-contrast text colors (`text-white`, `text-slate-300`) in `index.css`.
 
-**3. Chart Responsiveness**
+**2. Chart Responsiveness**
 *Challenge*: Charts looking cramped on mobile.
 *Solution*: Wrapped charts in `ResponsiveContainer` and adjusted axis ticks/fonts dynamically via CSS and Recharts props.
 
 ---
 
-## 1️⃣2️⃣ Future Enhancements
+## 11 Future Enhancements
 
 - 🔔 **Weather Alerts**: Push notifications for severe weather warnings.
 - 🗺️ **Map Visualization**: Interactive map layer showing weather radar.
@@ -213,7 +198,7 @@ src/
 
 ---
 
-## 1️⃣3️⃣ Conclusion
+## 12 Conclusion
 
 This project demonstrates a comprehensive mastery of modern Frontend development. By combining **React** for UI, **Redux Toolkit** for complex state management, and **Data Visualization** libraries, it delivers a production-grade user experience. The scalable architecture ensures it is ready for future feature expansion.
 
