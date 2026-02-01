@@ -75,14 +75,14 @@ const CityDetails: React.FC = () => {
             <div className="flex justify-between items-center mb-4 flex-wrap gap-2">
                 <h2 className="text-xl font-semibold text-white">Forecast</h2>
                 
-                <div className="flex gap-4">
+                <div className="flex gap-4 flex-wrap justify-end">
                      {/* Range Toggle */}
                     <div className="flex bg-white/10 rounded-lg p-1 gap-1">
                          {['24h', '5d'].map((r) => (
                             <button
                                 key={r}
                                 onClick={() => setRange(r as any)}
-                                className={`px-3 py-1 rounded-md text-sm capitalize transition ${range === r ? 'bg-white text-blue-900 font-bold' : 'text-slate-300 hover:text-white'}`}
+                                className={`px-2 py-1 md:px-3 rounded-md text-xs md:text-sm capitalize transition ${range === r ? 'bg-white text-blue-900 font-bold' : 'text-slate-300 hover:text-white'}`}
                             >
                                 {r}
                             </button>
@@ -90,12 +90,12 @@ const CityDetails: React.FC = () => {
                     </div>
 
                     {/* Type Toggle */}
-                    <div className="flex bg-white/10 rounded-lg p-1 gap-1">
+                    <div className="flex bg-white/10 rounded-lg p-1 gap-1 overflow-x-auto max-w-full">
                         {['temp', 'wind', 'humidity', 'rain'].map((type) => (
                             <button
                                 key={type}
                                 onClick={() => setChartType(type as any)}
-                                className={`px-3 py-1 rounded-md text-sm capitalize transition ${chartType === type ? 'bg-white text-blue-900 font-bold' : 'text-slate-300 hover:text-white'}`}
+                                className={`px-2 py-1 md:px-3 rounded-md text-xs md:text-sm capitalize transition ${chartType === type ? 'bg-white text-blue-900 font-bold' : 'text-slate-300 hover:text-white'}`}
                             >
                                 {type}
                             </button>
